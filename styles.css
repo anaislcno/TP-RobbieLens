@@ -1,3 +1,5 @@
+/* Bases */
+
 * {
     margin: 0;
     padding: 0;
@@ -87,6 +89,96 @@ header, footer {
     background: linear-gradient(#696484, #8788BA);
 }
 
+nav a {
+    margin-left: 30px;
+}
+
+/* Index */
+
+#photos {
+    background-color: white;
+    /* padding: 80px; */
+}
+
+#photos h2 {
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#photos div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    align-items: flex-start;
+    margin: auto;
+}
+
+#intro div {
+    padding-right: 60px;
+}
+
+/* Index Form */
+
+#contact h2 {
+    color: #A5B4FC;
+}
+
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #A5B4FC;
+    border-radius: 10px;
+}
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* input:invalid {
+    border: 2px solid #800000;
+} */
+
+/* input:valid {
+    border: 2px solid #A5B4FC;
+} */
+
+.form-nom-mail {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+/* About */
+
 .bord {
     border-right: 1px solid #8E86B5;
     border-bottom: 1px solid #8E86B5;
@@ -120,51 +212,8 @@ section {
     margin: auto;
 }
 
-footer, nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
-footer img {
-    margin-left: 15px;
-}
-
-nav a {
-    margin-left: 30px;
-}
-
-#photos {
-    background-color: white;
-    /* padding: 80px; */
-}
-
-#photos h2 {
-    color: #242424;
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-#photos div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 15px;
-    gap: 15px;
-}
-
-#intro {
-    display: flex;
-    flex-direction: row;
-    max-width: 1000px;
-    align-items: flex-start;
-    margin: auto;
-}
-
-#intro div {
-    padding-right: 60px;
-}
+/* Portfolio */
 
 #portfolio-container {
     background-color: white;
@@ -210,6 +259,29 @@ nav a {
     position: relative;
 }
 
+/* Portfolio Hover */
+
+.photo-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25em;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    display: none;
+}
+
+.link-photo:hover .photo-hover{
+    display: flex;
+}
+
+/* About Table */
+
 table {
     color:white;
     text-align: center;
@@ -224,4 +296,17 @@ td, th {
 
 td {
     padding: 50px;
+}
+
+/* Footer */
+
+footer, nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    margin-left: 15px;
 }
