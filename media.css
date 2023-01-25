@@ -1,0 +1,91 @@
+@media screen and (max-width: 996px) {
+
+/* Général */
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+
+/* Index */
+
+    #intro form {
+        max-width: 1000px;
+    }
+
+    section {
+        padding: 50px 20px 50px 20px;
+    }
+
+    #intro {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #intro div, p {
+        text-align: center;
+        order: 2;
+        padding: 0px;
+    }
+
+    #intro h1 {
+        text-align: center;
+    }
+
+    #intro p {
+        margin-bottom: 20px;
+    }
+
+    #intro img {
+        order: 1;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+
+    #photos div {
+        flex-direction: column;
+    }
+
+    .form-nom-mail {
+        flex-direction: column;
+    }
+
+    form {
+        margin: auto;
+    }
+
+/* About */
+
+    .bord p {
+        margin-bottom: 25px;
+    }
+
+    #tarifs {
+        display: none;
+    }
+
+/* Portfolio */
+    #grid-paysages, #grid-portraits {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+    }
+
+    .link-photo-large {
+        grid-column:initial;
+    }
+    
+    .link-photo-medium {
+        grid-column:initial;
+        grid-row: initial;
+    }
+}
